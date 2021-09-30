@@ -89,7 +89,7 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [[
-        InlineKeyboardButton('Support Group', url='t.me/Mo_Tech_Group'),
+        InlineKeyboardButton('Support Group🔊', url='t.me/cinehut'),
         InlineKeyboardButton('More Botz', url='t.me/onnpoderka/2')
         ],[
         InlineKeyboardButton('🖥️ How To Own 🖥️', url='https://t.me/onnpoderka/2')
