@@ -117,7 +117,7 @@ async def start(bot, message):
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("📁SEARCH MOVIES 🔎", switch_inline_query_current_chat=''),
+                InlineKeyboardButton("SEARCH MOVIES🔎", switch_inline_query_current_chat=''),
                 InlineKeyboardButton("🖋 CREATOR 🚪", url="https://t.me/cinehut")
                 ],[
                 InlineKeyboardButton("⚒ HELP 🛠", callback_data="help"),
