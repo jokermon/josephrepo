@@ -112,14 +112,13 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_text(
-            START_MSG,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
+        await message.reply_photo(
+            photo="https://telegra.ph/file/a2d296d0942fdfae84674.jpg",
+            caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("Join our group🎬", url="https://t.me/cinehut")
+                InlineKeyboardButton("More Botz", url="https://t.me/MT_Botz")
                 ],[
                 InlineKeyboardButton("Help", callback_data="help"),
                 InlineKeyboardButton("About", callback_data="about")
@@ -335,7 +334,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             InlineKeyboardButton('More Botz', url='https://t.me/cinehut'),
-            InlineKeyboardButton('Video', url='https://t.me/cinehut')
+            InlineKeyboardButton('Video', url=f'{TUTORIAL}')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
