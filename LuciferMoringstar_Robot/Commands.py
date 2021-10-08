@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔊 JOIN OUR CHANNEL 📢', url='https://t.me/onnpoderka/2')
+                        InlineKeyboardButton('🔊 JOIN OUR CHANNEL 📢', url='https://t.me/cinehut_updates')
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
@@ -117,7 +117,7 @@ async def start(bot, message):
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
+                InlineKeyboardButton("📁SEARCH MOVIES 🔎", switch_inline_query_current_chat=''),
                 InlineKeyboardButton("🖋 CREATOR 🚪", url="https://t.me/cinehut")
                 ],[
                 InlineKeyboardButton("⚒ HELP 🛠", callback_data="help"),
