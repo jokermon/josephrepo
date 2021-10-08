@@ -25,13 +25,13 @@ Bot Owner Only
 /logger  Get Logs
 /delete Delete File From Database
 
-[➡️How To Add Old Files For database](https://youtu.be/mtu5hgW-l_o)
+[➡️How To Add Old Files For databas](https://t.me/onnpoderkka/2)
 
 @cinehut 
 """
 
 ABOUT = """
-➥ Name :  Ruby
+➥ Name :  [Ruby](t.me/stephenchbot)
     
 ➥ Creator : [Joker](t.me/Angelamego)
 
