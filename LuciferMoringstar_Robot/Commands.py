@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url='https://t.me/onnpoderka/2')
+                        InlineKeyboardButton('🔊 JOIN OUR CHANNEL 📢', url='https://t.me/onnpoderka/2')
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
@@ -118,10 +118,10 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("More Botz", url="https://t.me/cinehut")
+                InlineKeyboardButton("🖋 CREATOR 🚪", url="https://t.me/cinehut")
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
+                InlineKeyboardButton("⚒ HELP 🛠", callback_data="help"),
+                InlineKeyboardButton("📎 ABOUT 👀", callback_data="about")
                 ]]
             )
         )
@@ -333,8 +333,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('More Botz', url='https://t.me/cinehut'),
-            InlineKeyboardButton('Video', url='https://t.me/onnpoderka/2')
+            InlineKeyboardButton('📁 PLEASE JOIN', url='https://t.me/cinehut'),
+            InlineKeyboardButton('🛑 MORE MOVIES  🛑', url='https://t.me/joinchat/s3MC2Q0hHVw0Y2U9')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
