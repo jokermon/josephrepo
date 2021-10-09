@@ -17,12 +17,14 @@ LOG_CHANNEL = BROADCAST_CHANNEL
 import random
 
 PHOTO = [
-"https://telegra.ph/file/8bcc52ff23337a52c441b.jpg",
-"https://telegra.ph/file/d1fe5fc8a1851338c62e3.jpg",
-"https://telegra.ph/file/0a8a85ea0753bcafbde8b.jpg",
-"https://telegra.ph/file/5b4234e89b7b0d6db373c.jpg",
-"https://telegra.ph/file/85eca3a520a28e2f0e736.jpg",
-"https://telegra.ph/file/eb7711d61ee13c74b57c4.jpg"
+"https://telegra.ph/file/1c2d209eb884b2046eab6.jpg",
+"https://telegra.ph/file/ea17e5dec0fad3c19edf1.jpg",
+"https://telegra.ph/file/1cf4088bb428fc0f096e4.jpg",
+"",
+"https://telegra.ph/file/b0557979883d1b6ea1410.jpg",
+"https://telegra.ph/file/99b2da97f86e3f3683afb.jpg"
+"https://telegra.ph/file/2b1b1f587df5bae25dcdd.jpg"
+"https://telegra.ph/file/f3d9bbb078d1fab9d74be.jpg"
 ]
 
 db = Database(DB_URL, SESSION)
