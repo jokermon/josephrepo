@@ -20,11 +20,11 @@ PHOTO = [
 "https://telegra.ph/file/1c2d209eb884b2046eab6.jpg",
 "https://telegra.ph/file/ea17e5dec0fad3c19edf1.jpg",
 "https://telegra.ph/file/1cf4088bb428fc0f096e4.jpg",
-"",
+"https://telegra.ph/file/2b1b1f587df5bae25dcdd.jpg",
 "https://telegra.ph/file/b0557979883d1b6ea1410.jpg",
-"https://telegra.ph/file/99b2da97f86e3f3683afb.jpg"
-"https://telegra.ph/file/2b1b1f587df5bae25dcdd.jpg"
-"https://telegra.ph/file/f3d9bbb078d1fab9d74be.jpg"
+"https://telegra.ph/file/99b2da97f86e3f3683afb.jpg",
+"https://telegra.ph/file/2b1b1f587df5bae25dcdd.jpg",
+"https://telegra.ph/file/f3d9bbb078d1fab9d74be.jpg",
 ]
 
 db = Database(DB_URL, SESSION)
