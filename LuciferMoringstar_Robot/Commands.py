@@ -14,6 +14,17 @@ logger = logging.getLogger(__name__)
 
 LOG_CHANNEL = BROADCAST_CHANNEL
 
+import random
+
+PHOTO = [
+"https://telegra.ph/file/8bcc52ff23337a52c441b.jpg",
+"https://telegra.ph/file/d1fe5fc8a1851338c62e3.jpg",
+"https://telegra.ph/file/0a8a85ea0753bcafbde8b.jpg",
+"https://telegra.ph/file/5b4234e89b7b0d6db373c.jpg",
+"https://telegra.ph/file/85eca3a520a28e2f0e736.jpg",
+"https://telegra.ph/file/eb7711d61ee13c74b57c4.jpg"
+]
+
 db = Database(DB_URL, SESSION)
 
 @Client.on_message(filters.command("start"))
@@ -113,7 +124,7 @@ async def start(bot, message):
         )
     else:
         await message.reply_photo(
-            photo="https://telegra.ph/file/429a6436830e281526411.jpg",
+            photo=f"{random.choice(PHOTO)}",
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [[
