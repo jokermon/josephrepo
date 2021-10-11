@@ -61,7 +61,7 @@ async def filter(client, message):
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
-                    )          
+                    )
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             return
@@ -127,8 +127,8 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
-                    ) 
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
+                )
         else:
             return
         if not btn:
@@ -168,9 +168,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=result_txt, reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(result_txt, reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
@@ -275,22 +275,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
                 return
         elif query.data == "help":
-            buttons = [
-                [
-                    InlineKeyboardButton('Update Channel', url='t.me/cinehut'),
-                    InlineKeyboardButton('Source Code', url='https://t.me/onnpoderka/2')
-                ]
-                ]
+            buttons = [[
+                InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
+                InlineKeyboardButton('Source Code', url="https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot")
+                ],[
+                InlineKeyboardButton('💫Deploy Video💫', url=f'{TUTORIAL}')
+                ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/cinehut'),
-                    InlineKeyboardButton('Source Code', url='https://t.me/onnpoderka/2')
+                    InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
+                    InlineKeyboardButton('Source Code', url=f'{TUTORIAL}')
                 ]
                 ]
-            await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
         elif query.data.startswith("pr0fess0r_99"):
@@ -310,7 +310,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url='https://t.me/onnpoderka/2')
+                        InlineKeyboardButton('💫 DEPLOY VIDEO 💫', url=f'{TUTORIAL}')
                     ]
                     ]
                 
@@ -341,7 +341,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url='https://t.me/onnpoderka/2')
+                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
                     ]
                     ]
                 
