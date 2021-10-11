@@ -58,15 +58,10 @@ async def filter(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = file.file_name
-                file_size = get_size(file.file_size)
-                callback_data=f"pr0fess0r_99#{file_id}"
+                filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [
-                            InlineKeyboardButton(text=f"{file_name}", url=f"{file_link}"),
-                            InlineKeyboardButton(text=f"{file_size}", url=f"{file_link}")
-                    ]   
-                )          
+                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
+                    )          
         else:
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             return
@@ -130,15 +125,10 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = file.file_name
-                file_size = get_size(file.file_size)
-                callback_data=f"pr0fess0r_99#{file_id}"
+                filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [
-                            InlineKeyboardButton(text=f"{file_name}", url=f"{file_link}"),
-                            InlineKeyboardButton(text=f"{file_size}", url=f"{file_link}")
-                    ]   
-                )          
+                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
+                    ) 
         else:
             return
         if not btn:
